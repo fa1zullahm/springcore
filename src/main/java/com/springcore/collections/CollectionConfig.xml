@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p" 	
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd">
+   
+   <bean class="com.springcore.collections.Emp" name="emp1">
+   		<property name="name" value="faizullah" />
+   		   		
+   		<property name="phones">
+   			<list>
+   				<value>1-743-2381733</value>
+   				<value>1-313-8324407</value>
+   				<value>1-248-239-9999</value>
+   				<null/>
+   			</list>
+   		</property>
+   		<property name="address">
+   			<set>
+   				<value>Detroit</value>
+   				<value>Canton</value>
+   				<value>Taylor</value>
+   			</set>
+   		</property>
+   		
+   		<property name="courses">
+   			<map>
+   				<entry key="java" value="2months" />
+   				<entry key="spring" value="2 weeks" />
+   				<entry key="springboot" value="3 weeks" />
+   				
+   			</map>
+   		</property>
+   		
+   		<property name="props">
+   			<props>
+   				<prop key="name">DetRadio</prop>
+   				<prop key="transmission">FM</prop>
+   				<prop key="timing">24Hours</prop>
+   			</props>
+   		
+   		</property>
+   </bean>
+   
+   </beans>
